@@ -1,0 +1,17 @@
+    #kasaLogoHeader {
+        width: 145px;
+        height: 47px;
+    }
+
+    #kasaLogoFooter {
+        height: 39.444419860839844px;
+        width: 122px;
+    }
+
+    @media (min-width: 768px){
+        #kasaLogoHeader {
+            height: 68px;
+            width: 210.32px;
+        }
+    }
+
