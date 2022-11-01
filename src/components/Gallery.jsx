@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import "../css/Card.css";
-import homes from "../logements.json";
 import Card from "../components/Card"
 
-const Gallery = () => {
+const Gallery = (props) => {
+
   return (
     <main id="cardContainer">
       <div id="cardCenterContainer">
-        {homes.map((home) => {
+        {props.housing.map((home) => {
           return (
             <Card
               id={home.id}

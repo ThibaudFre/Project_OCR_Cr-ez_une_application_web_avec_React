@@ -1,17 +1,18 @@
 .bannerContainer {
     max-width: 1240px;
+    height: 223px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px 20px 0 20px;
+    margin: 16px 0 0 0;
     border-radius: 25px;
 }
 
 .bannerContainer img {
     position: absolute;
     object-fit: none;
-    object-position: -473px -103px;
+    object-position: -473px 0px;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -38,6 +39,12 @@
     font-weight: 500;
 }
 
+
+#bannerAbout img{
+    object-fit: cover;
+    object-position: initial;
+}
+
 @media (max-width: 374px) {
     .bannerContainer h1 {
         padding: 31px 52px 32px 16px;
@@ -48,7 +55,7 @@
 
 @media (min-width: 768px) {
     .bannerContainer {
-        margin: 27px 100px 0 100px;
+        margin: 27px 0 0 0;
         padding: 15px 0 15px 0;
         height: 111px;
     }
@@ -80,17 +87,11 @@
 
 @media (min-width: 1440px) {
     .bannerContainer {
-        margin: 63px 100px 0 100px;
-        padding: 83px 0 83px 0;
+        margin: 63px 0 0 0;
+        padding: 56px 0 56px 0;
     }
 
     .bannerContainer h1 {
         font-size: 48px;
-    }
-}
-
-@media (min-width: 1441px) {
-    .bannerContainer {
-        margin: 63px auto 0 auto;
     }
 }

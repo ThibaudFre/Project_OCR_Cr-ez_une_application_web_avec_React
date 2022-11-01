@@ -1,0 +1,20 @@
+#AboutDropDownsContainer {
+    max-width: 1240px;
+    margin-top: 31px;
+    margin-bottom: 50px;
+    gap: 31px;
+}
+
+.dropDownAbout {
+    margin: 0 auto 31px auto;
+}
+
+@media (min-width: 1220px) {
+    #AboutDropDownsContainer {
+        margin:  31px auto 50px auto;
+    }
+    
+    .dropDownAbout {
+        max-width: 1023px;
+    }
+}

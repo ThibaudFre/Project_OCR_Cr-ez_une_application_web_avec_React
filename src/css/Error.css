@@ -15,14 +15,16 @@
     text-align:justify;
 }
 
+#texteContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
 #mainError p {
     font-size: 18px;
-    width: 250px;
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: center;
 }
 
 #backHomeLink {
@@ -39,10 +41,6 @@
 
     #mainError p {
         font-size: 25px;
-        width: 50%;
-        max-width: 606px;
-        margin: auto;
-
     }
 
     #backHomeLink {
@@ -63,8 +61,6 @@
 
     #mainError p {
         font-size: 36px;
-        width: initial;
-
     }
 
 }
