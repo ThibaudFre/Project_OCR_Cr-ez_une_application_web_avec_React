@@ -1,4 +1,4 @@
-#AboutDropDownsContainer {
+.AboutDropDownsContainer {
     max-width: 1240px;
     margin-top: 31px;
     margin-bottom: 50px;
@@ -9,8 +9,23 @@
     margin: 0 auto 31px auto;
 }
 
+.dropDownAbout .titleDropDownContainer {
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .dropDownAbout .titleDropDownContainer {
+        border-radius: 5px;
+        padding: 19.5px 33px 19.5px 20px;
+    }
+
+    .dropDownAbout .titleDropDownContainer, .dropDownAbout .contentDropDownContainer {
+        font-size: 24px;
+    }
+}
+
 @media (min-width: 1220px) {
-    #AboutDropDownsContainer {
+    .AboutDropDownsContainer {
         margin:  31px auto 50px auto;
     }
     

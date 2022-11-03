@@ -4,20 +4,20 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-header, .bannerContainer, #cardContainer, #houseDetailTop, #houseDetailBottom, #houseDetailBottom, #AboutDropDownsContainer{
+header, .bannerContainer, .cardContainer, .houseDetailTop, .houseDetailBottom, .AboutDropDownsContainer{
   margin-left: 20px;
   margin-right:20px;
 }
 
 @media (min-width: 768px) {
-  header, .bannerContainer, #cardContainer, #houseDetailTop, #houseDetailBottom, #houseDetailBottom, #AboutDropDownsContainer {
+  header, .bannerContainer, .cardContainer, .houseDetailTop, .houseDetailBottom, .AboutDropDownsContainer {
     margin-left: 100px;
     margin-right:100px;
   }
 }
 
 @media (min-width: 1441px) {
-  header, .bannerContainer, #cardContainer, #houseDetailTop, #houseDetailBottom, #houseDetailBottom, #AboutDropDownsContainer  {
+  header, .bannerContainer, .cardContainer, .houseDetailTop, .houseDetailBottom, .AboutDropDownsContainer  {
     margin-left: auto;
     margin-right:auto;
   }

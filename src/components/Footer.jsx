@@ -5,7 +5,7 @@ import '../css/KasaLogo.css'
 const Footer = (props) => {
     return (
         <footer>
-            <KasaLogo ident="kasaLogoFooter" colorLogo="#FFFFFF"/>
+            <KasaLogo classes="kasaLogoFooter" colorLogo="#FFFFFF"/>
             <p>{props.texte}</p>
         </footer>
     )

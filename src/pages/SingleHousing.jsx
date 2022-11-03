@@ -2,34 +2,25 @@ import Carrousel from "../components/Carrousel";
 import { useParams } from "react-router-dom";
 import Error from "./Error";
 import "../css/singleHousing.css";
-import Star from "../components/Star";
 import DropDown from "../components/DropDown";
+import StarsRate from "../components/StarsRate";
 
 const SingleHousing = (props) => {
+  /*I catch the id with useParams method*/
   const houseId = useParams();
+  /*and save in house const all the data of the house funded with the houseid const*/
   const house = props.housing.find((house) => house.id === houseId.productId);
 
+  /*If no house is find display the Error page*/
   if (house === undefined) {
     return <Error />;
   }
 
   const pictures = house.pictures;
 
-  const [firstName, lastName] = house.host.name.split(" ");
+  const [firstName, lastName] = house.host.name.split(" "); /*here I split the full name to display the firstName and the lastName one under the other more bellow*/
 
-  const rate = parseInt(house.rating);
-  const starColors = [];
-
-  for (let i = 0; i < rate; i++) {
-    starColors.push("#FF6060");
-  }
-
-  const restStars = 5 - rate;
-
-  for (let i = 0; i < restStars; i++) {
-    starColors.push("#E3E3E3");
-  }
-
+  /*mapping of each equipment list to create li depending to numbs of equipments*/
   const EquipmentsList = () => {
     return(
       <ul>
@@ -44,12 +35,14 @@ const SingleHousing = (props) => {
 
   return (
     <>
+      {/*Carroussel in house page*/}
       <Carrousel pictures={pictures} />
-      <section id="houseDetailTop">
-        <div id="titleTagContainer">
+      {/*house détail under the carrousel*/}
+      <section className="houseDetailTop">
+        <div className="titleTagContainer">
           <h1>{house.title}</h1>
           <p>{house.location}</p>
-          <div id="tagContainer">
+          <div className="tagContainer">
             {house.tags.map((tag) => {
               return (
                 <div className="houseTag" key={tag}>
@@ -60,15 +53,13 @@ const SingleHousing = (props) => {
             })}
           </div>
         </div>
-        <div id="hostDetail">
+        <div className="hostDetail">
           <div id="rateStarsContainer">
-            {starColors.map((color, index) => {
-              return <Star color={color} key={"star" + index} />;
-            })}
+            <StarsRate rate={house.rating}/>
           </div>
 
-          <div id="namePictContainer">
-            <div id="nameContainer">
+          <div className="namePictContainer">
+            <div className="nameContainer">
               <p>{firstName}</p>
               <p>{lastName}</p>
             </div>
@@ -77,9 +68,9 @@ const SingleHousing = (props) => {
           </div>
         </div>
       </section>
-      <section id="houseDetailBottom">
+      <section className="houseDetailBottom">
             <DropDown classes="singleHouseDropDown dropDown" title="Description" content={house.description}/>
-            <DropDown classes="singleHouseDropDown dropDown" title="Équipements" content={<EquipmentsList />} />
+            <DropDown classes="singleHouseDropDown dropDown" title="Équipements" content={<EquipmentsList />} /> {/*here is used equipment list*/}
       </section>
     </>
   );

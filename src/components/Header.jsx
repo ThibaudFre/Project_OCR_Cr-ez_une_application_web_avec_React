@@ -7,7 +7,7 @@ function Header(props) {
    return (
     <header>
         <Link to="/" >
-            <KasaLogo ident="kasaLogoHeader" colorLogo="#FF6060"/>
+            <KasaLogo classes="kasaLogoHeader" colorLogo="#FF6060"/>
         </Link>
 
         <nav>

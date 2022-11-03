@@ -11,8 +11,7 @@
 
 .bannerContainer img {
     position: absolute;
-    object-fit: none;
-    object-position: -473px 0px;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -79,6 +78,10 @@
 
     .bannerContainer h1 {
         font-size: 37px;
+    }
+
+    #bannerAbout img{
+        object-position: 0px -201px;
     }
 }
 

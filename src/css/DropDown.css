@@ -19,7 +19,7 @@
 .contentDropDownContainer {
     font-size: 13px;
     display: none;
-    height:0%;
+    height: 0%;
     position: relative;
     z-index: 0;
     top: -10px;
@@ -31,6 +31,7 @@
 
 .dropDown li {
     list-style-type: none;
+    margin: 0 0 3px 0;
 }
 
 .contentAppear {
@@ -43,7 +44,7 @@
     transform: rotate(90deg);
 }
 
-.ArrowDown {
+.arrowDown {
     transform: rotate(270deg)
 }
 
@@ -51,7 +52,7 @@
     .titleDropDownContainer {
         border-radius: 10px;
         font-size: 18px;
-        padding: 21.5px 33px 21.5px 20px;
+        padding: 22px 33px 22px 20px;
     }
 
     .contentDropDownContainer {
@@ -61,7 +62,7 @@
         padding: 40px 12px 53px 20px;
     }
 
-        .dropDownArrow {
+    .dropDownArrow {
         width: 15.56px;
     }
 }

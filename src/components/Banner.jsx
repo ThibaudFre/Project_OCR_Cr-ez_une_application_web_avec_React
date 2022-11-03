@@ -1,5 +1,7 @@
 import "../css/Banner.css"
 
+/*Banner is the banner displayed in the home and about pages*/
+
 const Banner = (props) => {
     return (
     <section className="bannerContainer" id={props.ident}>

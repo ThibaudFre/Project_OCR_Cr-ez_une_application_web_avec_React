@@ -1,4 +1,4 @@
-#carrousel {
+.carrousel {
     position: relative;
     max-width: 1240px;
     display: flex;
@@ -11,7 +11,7 @@
     background-size: cover;
 }
 
-#arrowContainer {
+.arrowContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -27,23 +27,23 @@
 transform: rotate(180deg);
 }
 
-#carrouselNumb {
+.carrouselNumb {
     display: none;
 }
 
 @media (min-width:  580px) {
-    #carrousel{
+    .carrousel{
         background-position: center;
     }
 }
 
 @media (min-width:768px){
-    #carrousel {
+    .carrousel {
         margin: 27px 100px 15px 100px;
         height: 415px;
     }
 
-    #carrouselNumb {
+    .carrouselNumb {
         display: block;
         position: absolute;
         bottom: 24px;
@@ -58,7 +58,7 @@ transform: rotate(180deg);
 }
 
 @media (min-width: 1441px) {
-    #carrousel {
+    .carrousel {
         margin: 27px auto 15px auto;
     }
     

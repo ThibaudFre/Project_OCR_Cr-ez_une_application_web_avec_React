@@ -1,4 +1,4 @@
-#mainError {
+.mainError {
     padding: 195px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     color: #FF6060;
 }
 
-#mainError h1 {
+.mainError h1 {
     font-size: 96px;
     font-weight: 700;
     display: flex;
@@ -15,51 +15,51 @@
     text-align:justify;
 }
 
-#texteContainer {
+.texteContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 70%;
 }
 
-#mainError p {
+.mainError p {
     font-size: 18px;
     font-weight: 500;
 }
 
-#backHomeLink {
+.backHomeLink {
     padding: 133px 0 235px 0;
     font-size: 14px;
     color:#FF6060;
 }
 
 @media (min-width: 768px) {
-    #mainError h1 {
+    .mainError h1 {
         font-size: 180px;
         font-weight: 600;
     }
 
-    #mainError p {
+    .mainError p {
         font-size: 25px;
     }
 
-    #backHomeLink {
+    .backHomeLink {
         padding: 130px 0 235px 0;
         font-size: 18px;
     }
 }
 
 @media (min-width: 1440px){
-    #mainError {
+    .mainError {
         padding: 174px 0 0 0;
     }
     
-    #mainError h1 {
+    .mainError h1 {
         font-size: 288px;
         font-weight: 700;
     }
 
-    #mainError p {
+    .mainError p {
         font-size: 36px;
     }
 

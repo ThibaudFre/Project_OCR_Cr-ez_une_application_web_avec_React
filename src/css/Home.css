@@ -1,11 +1,11 @@
-#cardContainer {
+.cardContainer {
     max-width: 1240px;
     padding: 22px 0 56px 0;
     background-color: none;
     border-radius: 25px;
 }
 
-#cardCenterContainer {
+.cardCenterContainer {
     display: flex;
     align-content: stretch;
     flex-wrap: wrap;
@@ -14,19 +14,19 @@
 }
 
 @media (min-width: 768px) {
-    #cardContainer {
+    .cardContainer {
         padding: 22px 0 56px 0;
     }
 }
 
 @media (min-width: 1440px) {
-    #cardContainer {
+    .cardContainer {
         display: flex;
         justify-content: center;
         padding: 56px 0 56px 0;
         background-color: #F7F7F7;
     }
-    #cardCenterContainer {
+    .cardCenterContainer {
         width: 1140px;
         column-gap: 60px;
         row-gap: 50px;
@@ -34,7 +34,7 @@
 }
 
 @media (min-width: 1441px) {
-    #cardContainer {
+    .cardContainer {
         margin-top: 43px;
     }
 }
