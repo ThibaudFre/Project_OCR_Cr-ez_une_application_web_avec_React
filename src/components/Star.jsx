@@ -1,5 +1,4 @@
 /*Star is a component used in the singleHouse page using for the rate of the house (in stars) wich is mapped and reppeat 5 times*/
-
 const Star = (props) => {
     return (
         <svg className="rateStar" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

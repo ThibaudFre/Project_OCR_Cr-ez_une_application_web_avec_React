@@ -14,7 +14,6 @@ const StarsRate = (props) => {
 
     - Result: my array contain [rate times the red color, rest times the grey color]
   */
-
     for (let i = 0; i < rate; i++) {
         starColors.push("#FF6060");
     }

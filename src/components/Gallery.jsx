@@ -5,7 +5,6 @@ import Card from "../components/Card"
   Gallery is a component wich display multiples components card depending of homes quantity
   and sharing with his props all the houses data to display them.
 */
-
 const Gallery = (props) => {
   return (
     <main className="cardContainer">

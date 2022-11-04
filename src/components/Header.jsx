@@ -9,7 +9,6 @@ function Header(props) {
         <Link to="/" >
             <KasaLogo classes="kasaLogoHeader" colorLogo="#FF6060"/>
         </Link>
-
         <nav>
             <Link className='link' to="/">
                 Accueil

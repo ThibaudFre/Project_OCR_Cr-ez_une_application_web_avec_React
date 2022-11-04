@@ -12,7 +12,6 @@ import { useState } from "react";
     - If isOpen true : turn the arrow from the top to the bottom and display the DropDown content (adding classes).
     - If isOpen false: the contrary (removing classes).
 */
-
 const DropDown = (props) => {
   const [isOpen, setOpen] = useState(false);
 

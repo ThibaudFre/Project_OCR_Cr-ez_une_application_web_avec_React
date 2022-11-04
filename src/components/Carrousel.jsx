@@ -14,7 +14,6 @@ import { useState } from "react";
   - When the user click on the right arrow and was at the last picture the carrousel display the first picture.
     When the user click on the left arrow and was at the first picture the carrousel display the last picture (slide line 24, 28)
 */
-
 const Carrousel = (props) => {
   const pictures = props.pictures;
   const [numPicture, setNumPicture] = useState(0);
@@ -35,9 +34,9 @@ const Carrousel = (props) => {
       : setNumPicture(numPicture - 1); //left
   };
 
-  const MoreThanOnePic = (props) => {
+  const moreThanOnePic = () => {
     if(pictures.length > 1) {
-      return <Arrow ident={props.ident} classes="carrouselArrow"/>
+      return true
     }
   }
 
@@ -45,10 +44,10 @@ const Carrousel = (props) => {
     <section className="carrousel" style={{ backgroundImage: `url(${picture})` }}>
       <div className="arrowContainer">
         <div onClick={() => slide("left")} className="carrouselArrowContainer">
-          <MoreThanOnePic ident="arrowLeft"/>
+          {moreThanOnePic() && <Arrow ident="arrowLeft" classes="carrouselArrow"/>}
         </div>
         <div onClick={() => slide()} className="carrouselArrowContainer">
-          <MoreThanOnePic />
+          {moreThanOnePic() && <Arrow classes="carrouselArrow"/>}
         </div>
       </div>
       <div className="carrouselNumb">{numPicture + 1}/{pictures.length}</div>

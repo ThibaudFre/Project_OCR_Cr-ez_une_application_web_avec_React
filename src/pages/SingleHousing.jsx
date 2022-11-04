@@ -4,6 +4,7 @@ import Error from "./Error";
 import "../css/singleHousing.css";
 import DropDown from "../components/DropDown";
 import StarsRate from "../components/StarsRate";
+import CreateList from "../components/CreateList";
 
 const SingleHousing = (props) => {
   /*I catch the id with useParams method*/
@@ -20,18 +21,6 @@ const SingleHousing = (props) => {
 
   const [firstName, lastName] = house.host.name.split(" "); /*here I split the full name to display the firstName and the lastName one under the other more bellow*/
 
-  /*mapping of each equipment list to create li depending to numbs of equipments*/
-  const EquipmentsList = () => {
-    return(
-      <ul>
-        {house.equipments.map(equipment => {
-          return (
-            <li key={equipment}>{equipment}</li>
-          )
-        })}
-      </ul>
-    )   
-  }
 
   return (
     <>
@@ -70,7 +59,7 @@ const SingleHousing = (props) => {
       </section>
       <section className="houseDetailBottom">
             <DropDown classes="singleHouseDropDown dropDown" title="Description" content={house.description}/>
-            <DropDown classes="singleHouseDropDown dropDown" title="Équipements" content={<EquipmentsList />} /> {/*here is used equipment list*/}
+            <DropDown classes="singleHouseDropDown dropDown" title="Équipements" content={<CreateList toList={house.equipments} />} /> {/*here is used CreateList to creat an list of li*/}
       </section>
     </>
   );
